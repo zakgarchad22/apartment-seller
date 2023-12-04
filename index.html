@@ -21,11 +21,11 @@
 
         <div class="check-group">
             <input class="form-radio" type="checkbox" name="immediate" id="immed-y">
-            <label for="immediate">Immediate</label>
+            <label for="immed-y">Immediate</label> 
         </div>
         <div class="check-group">
             <input class="form-radio" type="checkbox" name="parking" id="park-y">
-            <label for="parking">Parking</label>
+            <label for="park-y">Parking</label> 
         </div>
 
         <button>Find Apartments</button>
@@ -33,8 +33,23 @@
 
     <hr>
 
-    <div id="results"></div>
+    
+    <div id="results">
+        
+        
+    </div>
 
+    <script id="apartment-template" type="text/x-handlebars-template">
+        {{#each apartment}}
+         
+        <h1>Address: {{address}}</h1>
+        <p>Price: ${{price}}</p>
+        <p>Rooms: {{rooms}}</p>
+        <p>Immediate: {{#if immediate}}Yes{{else}}No{{/if}}</p>
+        <p>Parking: {{#if parking}}Yes{{else}}No{{/if}}</p>
+           
+        {{/each}}
+    </script>
     <!-- Your Code Here -->
     <!-- You should start doing handlebar stuff here -->
     <!-- Your Code Here -->

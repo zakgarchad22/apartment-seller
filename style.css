@@ -1,5 +1,5 @@
 *{
-    color: #DDC9B3;
+    color: #ea1101;
 }
 
 body{
@@ -130,7 +130,7 @@ button:active{background-color: #443729;}
     grid-area: lpark;
 }
 
-.result>.l-immediate{}
+
 
 .result>.address{
     grid-area: a;
@@ -148,7 +148,7 @@ button:active{background-color: #443729;}
     grid-area: park;
 }
 
-.result>.immediate{}
+
 
 .no-match{
     color: #DD6300;
